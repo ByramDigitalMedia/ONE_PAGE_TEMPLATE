@@ -185,6 +185,17 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
 
+  <script>
+    let menu = document.querySelector(".navbar .links")
+    let menuBtn = document.querySelector("#menu-btn")
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle("active")
+      menuBtn.classList.toggle("fa-times") // swaps bars ↔ X icon
+    })
+
+  </script>
+
   <!-- custom js file link  -->
   <script src="js/script.js"></script>
 
